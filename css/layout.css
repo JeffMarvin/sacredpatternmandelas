@@ -1,0 +1,255 @@
+
+/* moo fly around */
+
+* {
+	margin: 0; 
+	padding: 0;
+}
+
+html {
+	overflow: hidden;
+}
+
+body {
+	color: #ddd;
+	font: 0.85em "Trebuchet MS", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+	line-height: 1;
+	margin: 0;
+	padding: 0;
+	background-color: #000;
+}
+
+
+a {
+	text-decoration: none;
+	font-weight: bold;
+	cursor: pointer;
+	color: #ffb03b;
+}
+a img {
+	border: none;
+}
+a:link, a:visited {
+	color: #b64926; 
+	text-decoration: underline;
+	}
+h1 {color: #b64926; font: Verdana, Geneva, sans-serif; letter-spacing:1.2px;}
+h2 {color: #ffb03b; font: 1.5em; letter-spacing: 1.2px;}
+h3 {color: #b64926; font: bold 1em Verdana, Arial, sans-serif; letter-spacing: 2px;
+  text-transform: uppercase;  margin-bottom: 1.8em;}
+h4 {color: #ffb03b; font: bold 1.1em ;letter-spacing: 1px;}
+
+.nodisplay {
+	display: none;
+}
+
+#container {
+	width: 3700px;
+	height: 1650px;
+}
+
+
+/** PAGE POSITIONING **/
+.laidout {
+	position: absolute;
+	width: 1200px;
+	height: 850px;
+	padding: 7em 50px 50px 20px;	
+	background-color: transparent;
+}
+
+	
+	/* sections */
+	#updates {
+		top: 0px;
+		left: 0px;
+		height:850px;
+	}
+	
+	#contact {
+		top: 850px;
+		left: 0px;
+	}
+
+	#gallery {
+		top: 850px;
+		left: 1250px;
+	}
+		
+		
+	#aboutHeide {
+		top: 0px;
+		left: 2500px;
+	}
+		
+	#aboutMandalas {
+		top: 850px;
+		left: 2500px;
+	}
+	
+	/* background mandalas */
+	.bg-man {
+		background-repeat:no-repeat;		
+		position: absolute;
+		margin: 0;
+		padding: 0;
+	}
+	#bg-man-trees {
+		background: url('../images/bg_mandala_trees_709x763.jpg');	
+		height: 763px;
+		width: 709px;
+		top: 10px;
+		left: 500px;
+		z-index: -10;
+	}
+	#bg-man-celtic {
+		background-image: url('../images/bg_mandala_celtic_239x230.jpg');	
+		height: 239px;
+		width: 230px;
+		top: 1100px;
+		left: 2400px;
+		z-index:-11;
+	}
+	#bg-man-eye {
+		background-image: url('../images/bg_mandala_eye_256x248.jpg');	
+		height: 248px;
+		width: 256px;
+		top: 1236px;
+		left: 133px;
+		z-index: -12;
+	}
+	#bg-man-feathers {
+		background-image: url('../images/bg_mandala_feathers_709x657.jpg');	
+		height: 657px;
+		width: 709px;
+		top: 900px;
+		left: 470px;
+		z-index: -14;
+	}
+	#bg-man-people {
+		background-image: url('../images/bg_mandala_people_538x526.jpg');	
+		height: 526px;
+		width: 538px;
+		top: 970px;
+		left: 3200px;
+		z-index: -12;
+	}
+	#bg-man-stars {
+		background-image: url('../images/bg_mandala_stars_277x273.jpg');	
+		height: 273px;
+		width: 277px;
+		top: 1500px;
+		left: 2180px;
+		z-index: -12;
+	}
+	#bg-man-touch {
+		background-image: url('../images/bg_mandala_touch_388x375.jpg');	
+		height: 375px;
+		width: 388px;
+		top: 400px;
+		left: 1650px;
+		z-index: -12;
+	}
+	#bg-man-tree {
+		background-image: url('../images/bg_mandala_tree_679x664.jpg');	
+		height: 664px;
+		width: 679px;
+		top: 100px;
+		left: 2950px;
+		z-index: -12;
+	}
+/* navigation */
+#nav {
+	position: fixed; 
+	top: 10px; 
+	left: 10px;
+	z-index:20;
+	padding:10px;
+}
+#nav img#sitetitle {
+	float:left;	
+}
+
+ul.navlist {
+	float: left;
+	display: block;
+	padding: 0px;
+	border-top: 1px solid #333;
+}
+
+ul.navlist li {
+	display: block;
+	float: left;
+}
+
+a.navlink {
+	cursor: pointer;
+	display: block;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Tahoma, Verdana;
+	font-size: 0.9em;
+	color: #FFF;
+	text-align: center;
+	padding: 5px 25px 15px 0;
+
+}
+            
+a.navlink#hover {
+	border-bottom: 2px solid #fff;
+}
+/* smoothgallery */
+
+#myGallery
+{
+	text-align: left;
+	margin: 0 1em 1em 160px;
+}
+
+
+/* content */
+.contentblock {
+	width: 450px;
+	padding: 5px 0 15px;
+	line-height: 1.2em;
+}
+.contentblock p {
+	margin-bottom: 1.2em;
+	font-size:normal;
+}
+
+.contentblock p.highlight {
+    padding: 6px;
+    background-color: #F5B800;
+    color: #000;
+}
+ul.worklinks li {
+    list-style: none;
+}
+#gallery h3 {margin-bottom: 0.2em;}
+#gallery {padding-top:7em;}
+
+#aboutMandalas .contentblock {
+	margin-left: 140px;
+}
+#aboutHeide .contentblock {
+	width: 400px;
+}
+
+#heide-portrait {
+	float: right;
+	width: 234px;
+	height: 209px;
+	padding: 0 0 .4em 0;
+}
+
+#heide-caption {
+	font-size: 1.1em;
+	line-height: 1.6em;
+	color: #468966;
+	padding:1em 0;
+}
+.photocredit {
+	margin: 0 0 0 165px;
+	font-size: smaller;
+	color: #999;
+	line-height: 1em;
+}

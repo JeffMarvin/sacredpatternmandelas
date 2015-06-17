@@ -1,0 +1,383 @@
+@charset "utf-8";
+/* CSS for MelissaHie.com */
+
+/*
+	RESET STYLES 
+	http://meyerweb.com/eric/thoughts/2007/05/01/reset-reloaded/
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+body {
+	line-height: 1;
+	color: black;
+	background: white;
+}
+ol, ul {
+	list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+
+/* *************************************** */
+
+
+html {
+	overflow: hidden;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #000000;
+	background-image: url(../images/bg.gif);
+}
+
+strong {
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.clear {clear:both}
+
+#container {
+	width: 3700px;
+	height: 1650px;
+}
+
+
+/** PAGE POSITIONING **/
+
+.positioning {
+	position: absolute;
+	width: 1200px;
+	height: 800px;
+}
+
+	#updates {
+		top: 0px;
+		left: 0px;
+		background-color: #222;
+		background-image: url(../images/bg_butterfly.gif);
+		background-repeat: no-repeat;
+		background-position: bottom right;
+	}
+	
+	#gallery {
+		top: 850px;
+		left: 0px;
+		background-color: #DD1F8E;
+		background-image: url(../images/bg_pink.gif);
+		background-repeat: repeat-y;
+	}
+	
+	#contact {
+		top: 850px;
+		left: 1250px;
+		background-color: #00A7E2;
+		background-image: url(../images/bg_blue.gif);
+		background-repeat: repeat-y;
+	}
+		
+		
+	#aboutHeide {
+		top: 0px;
+		left: 1250px;
+		background-color: #84C922;
+		background-image: url(../images/bg_green.gif);
+		background-repeat: repeat-y;
+	}
+		
+	#aboutMandalas {
+		top: 0px;
+		left: 2500px;
+		background-color: #EE9A10;
+		background-image: url(../images/bg_orange.gif);
+		background-repeat: repeat-y;
+	}
+		
+	#skills {
+		top: 850px;
+		left: 2500px;
+		background-color: #620294;
+		background-image: url(../images/bg_purple.gif);
+		background-repeat: repeat-y;
+	}
+
+.inside {
+	margin: 30px 60px;
+	width: 720px;
+}
+	
+	.inside .header {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Tahoma, Verdana;
+		font-size: 17px;
+		color: #FFF;
+		padding-bottom: 25px;
+	}
+
+	.inside .text {
+		font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Tahoma, Verdana;
+		font-size: 11px;
+		color: #FFF;
+		text-align: justify;
+		line-height: 22px;
+		height: 250px;
+		width: 720px;
+	}
+	
+	.profile {
+		display: block;
+		float: left;
+		width: 88px;
+		height: 250px;
+		background-image: url(../images/pf.jpg);
+		background-repeat: no-repeat;
+		margin-right: 20px;
+		margin-bottom: 10px;
+		border: 10px solid #ca117d;
+	}
+	
+	.inside .index {
+		background-image: url(../images/index.gif);
+		width: 404px;
+		height: 177px;
+		display: block;
+		clear: both;
+		margin: 0px 0px;
+	}
+	
+		/** list for purple page **/
+		
+		.inside .text ul#purple {
+			border-top: 1px solid #7C2FA4;
+			margin: 30px 0px;
+		}
+	
+		.inside .text ul#purple li {
+			margin: 0;
+			padding: 0;
+			list-style-type: none;
+			display: block;
+			padding: 4px 16px;
+			border-bottom: 1px solid #7C2FA4;
+		}
+		
+		.inside .text ul#purple li:hover {
+			background-color: #7110A3;
+			color: #E8BFFD;
+		}
+
+/** TITLES **/
+
+.title {
+	background-repeat: no-repeat;
+	text-indent: -1000em;
+}
+
+	#contact .title {
+		background-image: url(../images/title_contact.gif);
+		height: 43px;
+	}
+
+	#about .title {
+		background-image: url(../images/title_about.gif);
+		height: 43px;
+	}
+	
+	#print .title {
+		background-image: url(../images/title_print.gif);
+		height: 50px;
+	}
+	
+	#skills .title {
+		background-image: url(../images/title_skills.gif);
+		height: 43px;
+	}
+	
+	#work .title {
+		background-image: url(../images/title_work.gif);
+		height: 43px;
+	}
+	
+/** NAVIGATION BUTTONS **/
+
+ul.navigation {
+	float: right;
+	display: block;
+	width: 341px;
+	padding: 0px;
+	text-align: right;
+}
+
+ul.navigation li {
+	display: block;
+	float: left;
+}
+
+#start ul.navigation { margin: 0 0; float: none; }
+
+a.navigator {
+	cursor: pointer;
+	display: block;
+	width: 45px;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Tahoma, Verdana;
+	font-size: 10px;
+	color: #FFF;
+	text-align: center;
+	margin-left: 1px;
+	padding: 5px;
+
+}
+
+	#start .navigator { background-color: #222; }
+	#work .navigator { background-color: #006cab; }
+	#print .navigator { background-color: #b97300; }
+	#about .navigator { background-color: #a60764; }
+	#skills .navigator { background-color: #400061; }
+	#contact .navigator { background-color: #639d11; }
+	
+	#start .present .navigator,
+	#work .present .navigator,
+	#print .present .navigator,
+	#about .present .navigator,
+	#skills .present .navigator,
+	#contact .present .navigator { background-color: #C00; color: #FFF;}
+
+/** LINKS **/
+
+a {
+	text-decoration: none;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+a:hover {
+	color: #FFF;
+}
+	
+	#about a {
+		color: #fdb3de;
+		background-color: #ca117d;
+	}
+	
+	#contact a {
+		color: #dcffab;
+		background-color: #70b212;
+	}
+	
+	#skills a {
+		color: #dfaef9;
+		background-color: #570184;
+	}
+	
+	#work a {
+		color: #c5eaff;
+		background-color: #007cc4;
+	}
+	
+/** PORTFOLIO **/
+
+.portfolio-item {
+	display: block;
+	float: left;
+	width: 135px;
+	height: 185px;
+	cursor: pointer;
+	margin-right: 5px;
+}
+
+.print-item {
+	display: block;
+	float: left;
+	width: 116px;
+	height: 132px;
+	cursor: pointer;
+	margin-right: 5px;
+}
+
+	#evacare { background-image: url(../images/thumb/evacare.jpg);}
+	#lakiff { background-image: url(../images/thumb/lakiff.jpg);}
+	#duffled { background-image: url(../images/thumb/duffled.jpg);}
+	#rickdavid { background-image: url(../images/thumb/rickdavid.jpg);}
+	#phirhospring { background-image: url(../images/thumb/phirhofall07.jpg);}
+	#phirhofall { background-image: url(../images/thumb/phirhofall06.jpg);}
+	
+/** SHOWCASE **/
+
+.strip {
+	padding-top: 20px;
+}
+
+.showcase {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Tahoma, Verdana;
+	font-size: 11px;
+	padding: 20px;
+	color: #FFF;
+	line-height: 18px;
+}
+
+	#print .showcase { background-color: #d06c07; }
+	#work .showcase { background-color: #0085d3; }
+
+.showcasename {
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+	#print .showcasename { color: #fee097;}
+	#work .showcasename { color: #9ddbff;}
+
+.showcase img {
+	border: 10px solid #FFF;
+	margin: 10px auto;
+	display: block;
+}
+
+.close {
+	float:right;
+	display: block;
+	font-weight: bold;
+	cursor: pointer;
+	font-size: 10px;
+	text-transform: uppercase;
+	background-color: #AA0000;
+	padding: 2px 8px;
+	margin-left: 4px;
+	margin-bottom: 4px;
+}
